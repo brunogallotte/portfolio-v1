@@ -1,0 +1,37 @@
+.headerBar {
+    position: relative;
+    width: 100%;
+    height: 6rem;
+    z-index: 0;
+    backdrop-filter: blur(2px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.boxLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+}
+
+.boxLinks li {
+    position: relative;
+    color: var(--zinc-50);
+    list-style: none;
+    margin-right: 2rem;
+    transition: color .1s;
+    cursor: pointer;
+}
+
+.boxLinks li:hover {
+    color: var(--violet-400);
+}
+
+.tabSelect {
+    position: absolute;
+    bottom: -2.5rem;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--violet-700);
+}
