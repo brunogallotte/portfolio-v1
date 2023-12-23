@@ -5,6 +5,8 @@ import twitterImg from '../../assets/twitterproject.png'
 import efoodImg from '../../assets/efood.png'
 
 import styles from './ListProjects.module.css'
+import { Title } from "../TitleBox/Title"
+import { ArrowDownRightSquare } from "lucide-react"
 
 const dataProjects: CardProps[] = [
     {
@@ -37,16 +39,19 @@ export function ListProjects() {
     return(
         <div className="container">
             <div className={styles.wrapper}>
-                {dataProjects.map(project => {
-                return <Card 
-                    imgUrl={project.imgUrl} 
-                    datePublished={project.datePublished} 
-                    title={project.title} 
-                    description={project.description} 
-                    linkVercel={project.linkVercel} 
-                    linkGitHub={project.linkGitHub} 
-                />
-                })}
+                <strong className={styles.title}><ArrowDownRightSquare size={32} />Projects</strong>
+                <div className={styles.content}>
+                    {dataProjects.map(project => {
+                    return <Card 
+                        imgUrl={project.imgUrl} 
+                        datePublished={project.datePublished} 
+                        title={project.title} 
+                        description={project.description} 
+                        linkVercel={project.linkVercel} 
+                        linkGitHub={project.linkGitHub} 
+                    />
+                    })}
+                </div>
             </div>
         </div>
     )

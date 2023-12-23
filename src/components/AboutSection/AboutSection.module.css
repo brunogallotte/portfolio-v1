@@ -1,0 +1,43 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    z-index: 1;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--zinc-300);
+}
+
+.wrapper strong {
+    display: flex;
+    align-items: center;
+    color: var(--violet-600);
+    gap: 0.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper p {
+    color: var(--zinc-300);
+    max-width: 100%;
+    padding-right: 1rem;
+    line-height: 22px;
+}
+
+.wrapper img {
+    position: relative;
+    width: 250px;
+    padding: 1rem;
+    background: var(--zinc-900);
+    border: 1px solid var(--zinc-800);
+    border-radius: 8px;
+}
+
+.boxtext {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxtext svg {
+    color: var(--violet-700);
+}

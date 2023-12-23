@@ -4,17 +4,14 @@ import nextIcon from '../../assets/skills/next.svg'
 
 import styles from './Skills.module.css'
 import { Separator } from './components/Separator'
-import { MoveDown } from 'lucide-react'
+import { Title } from '../TitleBox/Title'
 
 export function Skills() {
     return(
         <div className="container">
             <div className={styles.wrapper}>
                 <div className={styles.content}>
-                    <div className={styles.textBox}>
-                        <MoveDown size={24}/>
-                        <strong>Principal Skills</strong>
-                    </div>
+                    <Title text="principal skills"/>
                 </div>
                 <div className={styles.content}>
                     <img src={reactIcon} />
