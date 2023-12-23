@@ -19,20 +19,22 @@ export function Card({ imgUrl, datePublished, title, description, linkVercel, li
                 {datePublished}
             </time>
            <div className={styles.content}>
-                <strong>
-                    {title}
-                </strong>
-                <p>
-                    {description}
-                </p>
-
-            <footer className={styles.footer}>
-                <button>Find out more <ArrowUpRight size={16}/></button>
-                <div className={styles.links}>
-                    <Link href={linkVercel}/>
-                    <Github href={linkGitHub}/>
+                <div>
+                    <strong>
+                        {title}
+                    </strong>
+                    <p>
+                        {description}
+                    </p>
                 </div>
-            </footer>
+
+                <footer className={styles.footer}>
+                    <button>Saber mais<ArrowUpRight size={16}/></button>
+                    <div className={styles.links}>
+                        <Link href={linkVercel}/>
+                        <Github href={linkGitHub}/>
+                    </div>
+                </footer>
            </div>
         </div>
     )

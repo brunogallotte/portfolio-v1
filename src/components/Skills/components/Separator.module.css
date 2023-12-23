@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.separator {
+    width: 0.25rem;
+    height: 0.25rem;
+    background: var(--white);
+    border-radius: 50%;
+}

@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.box {
+    height: 15rem;
+    width: 50%;
+    padding: 1rem;
+    background: var(--zinc-900);
+    color: var(--zinc-200);
+}
+
+.box .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.content strong {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    color: var(--zinc-300);
+    padding-bottom: 1rem;
+}
