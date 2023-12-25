@@ -14,6 +14,7 @@
 }
 
 .content button {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -25,6 +26,11 @@
     border-radius: 8px;
     cursor: pointer;
     transition: .2s;
+}
+
+.content button a {
+    color: var(--zinc-200);
+    text-decoration: none;
 }
 
 .content button:hover {
@@ -39,24 +45,18 @@
     height: 6rem;
 }
 
-.boxLinks li {
+.boxLinks a {
     position: relative;
     color: var(--zinc-50);
     list-style: none;
     margin-right: 2rem;
+    padding: 0.5rem 0rem;
     transition: color .1s;
+    text-decoration: none;
     cursor: pointer;
 }
 
-.boxLinks li:hover {
+.boxLinks a:hover {
     color: var(--violet-400);
 }
 
-.tabSelect {
-    position: absolute;
-    bottom: -2.5rem;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: var(--violet-700);
-}

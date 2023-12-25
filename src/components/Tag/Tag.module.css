@@ -1,0 +1,5 @@
+.tag {
+    padding: 0.25rem 0.5rem;
+    background: var(--violet-700);
+    border-radius: 8px;
+}

@@ -1,22 +1,21 @@
 import { MessageSquareShare } from 'lucide-react'
+
 import styles from './Header.module.css'
+import { ItemLink } from './components/ItemLink'
 
 export function Header() {
     return(
         <header className={styles.headerBar}>
             <div className={`container ${styles.content}`}>
-                <nav>
-                    <ul className={styles.boxLinks}>
-                        <li>
-                            home
-                            <div className={styles.tabSelect} />
-                        </li>
-                        <li>projects</li>
-                        <li>about</li>
-                        <li>contact</li>
-                    </ul>
+                <nav className={styles.boxLinks}>
+                    <ItemLink link="/" title="Início" />
+                    <ItemLink link="/projects" title="Projects" />  
+                    <ItemLink link="/about" title="Sobre" />          
                 </nav>
-                <button><MessageSquareShare size={16}/>blog</button>
+                <button>
+                    <MessageSquareShare size={16}/>
+                    <ItemLink link="/blog" title="blog" />
+                </button>
             </div>
         </header>
     )
