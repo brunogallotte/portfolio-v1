@@ -5,7 +5,6 @@ import twitterImg from '../../assets/twitterproject.png'
 import efoodImg from '../../assets/efood.png'
 
 import styles from './ListProjects.module.css'
-import { Title } from "../TitleBox/Title"
 import { ArrowDownRightSquare } from "lucide-react"
 
 const dataProjects: CardProps[] = [
