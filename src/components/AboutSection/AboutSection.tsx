@@ -1,11 +1,11 @@
-import brunoImg from '../../assets/eu.jpeg'
+import brunoImg from '../../assets/eu.jpg'
 
 import styles from './AboutSection.module.css'
 import { ArrowDownRightSquare } from 'lucide-react'
 
 export function AboutSection() {
     return(
-        <div className="container">
+        <section className="container">
             <div className={styles.wrapper}>
                 <div className={styles.boxtext}>
                     <strong><ArrowDownRightSquare size={32} />Sobre mim</strong>
@@ -18,6 +18,6 @@ export function AboutSection() {
                 </div>
                 <img src={brunoImg} />
             </div>
-        </div>
+        </section>
     )
 }
