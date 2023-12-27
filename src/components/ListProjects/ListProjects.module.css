@@ -20,3 +20,11 @@
     display: flex;
     gap: 2rem;
 }
+
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

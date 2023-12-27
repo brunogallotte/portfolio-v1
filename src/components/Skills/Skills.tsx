@@ -18,7 +18,7 @@ export function Skills() {
                 transition={{ delay: 0.2, duration: 1, ease: "easeOut", type: "tween" }}
             >
                 <div className={styles.content}>
-                    <Title text="principal skills"/>
+                    <Title text="principais habilidades"/>
                 </div>
                 <div className={styles.content}>
                     <img src={reactIcon} />
