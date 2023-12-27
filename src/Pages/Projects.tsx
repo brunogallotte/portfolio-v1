@@ -8,10 +8,9 @@ export function Projects() {
         <AnimatePresence mode="wait">
             <Header />
             <motion.div 
-                initial={{  opacity: 0 }}
-                animate={{  opacity: 1, transition: { duration: 1 } }}
-                exit={{ y: -200, transition: { duration: 0.5 } }}
-                key="projects"
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.7, ease: "easeOut", type: "tween" }}
             >
                 <ListProjects />  
             </motion.div>

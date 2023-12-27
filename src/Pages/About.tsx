@@ -9,10 +9,9 @@ export function About() {
         <>
             <Header />
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { duration: 1 } }}
-                transition={{ ease: [0.17, 0.67, 0.83, 0.67] }}
-                exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+                initial={{ y: 100, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.7, ease: "easeOut", type: "tween" }}
             >
                 <AboutSection />
                 <VerticalTimeLine />
