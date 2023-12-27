@@ -1,5 +1,8 @@
+import { ArrowDownRightSquare } from "lucide-react";
 import { posts } from "../../data/postsData";
 import { Post } from "../Post/Post";
+
+import styles from './ListPosts.module.css'
 
 export function ListPosts() {
 
@@ -9,6 +12,9 @@ export function ListPosts() {
 
     return(
         <>
+            <div className="container">
+                <strong className={styles.title}><ArrowDownRightSquare size={32} />Blog</strong>
+            </div>
             {posts.map((post) => {
                 const limitedContent = getContentLimitedCaracters(post.content)
 

@@ -6,10 +6,17 @@ import styles from './Skills.module.css'
 import { Separator } from './components/Separator'
 import { Title } from '../TitleBox/Title'
 
+import { motion } from 'framer-motion'
+
 export function Skills() {
     return(
         <div className="container">
-            <div className={styles.wrapper}>
+            <motion.div 
+                className={styles.wrapper}
+                initial={{ y: 100 }}
+                animate={{ y: 0 }}
+                transition={{ delay: 0.2, duration: 1, ease: "easeOut", type: "tween" }}
+            >
                 <div className={styles.content}>
                     <Title text="principal skills"/>
                 </div>
@@ -20,7 +27,7 @@ export function Skills() {
                     <Separator />
                     <img src={nextIcon} className={styles.nextjs}/>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
         

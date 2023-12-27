@@ -2,6 +2,7 @@ import './global.css'
 
 function App() {
 
+
   return (
     <>
       <div className="bgDark" />

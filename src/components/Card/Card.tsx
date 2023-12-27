@@ -31,8 +31,12 @@ export function Card({ imgUrl, datePublished, title, description, linkVercel, li
                 <footer className={styles.footer}>
                     <button>Saber mais<ArrowUpRight size={16}/></button>
                     <div className={styles.links}>
-                        <Link href={linkVercel}/>
-                        <Github href={linkGitHub}/>
+                        <a href={linkVercel} target="_blank">
+                            <Link />
+                        </a>
+                        <a href={linkGitHub} target="_blank">
+                            <Github />
+                        </a>
                     </div>
                 </footer>
            </div>

@@ -9,7 +9,7 @@ export function Header() {
             <div className={`container ${styles.content}`}>
                 <nav className={styles.boxLinks}>
                     <ItemLink link="/" title="Início" />
-                    <ItemLink link="/projects" title="Projects" />  
+                    <ItemLink link="/projects" title="Projetos" />  
                     <ItemLink link="/about" title="Sobre" />          
                 </nav>
                 <button>

@@ -1,6 +1,7 @@
 import styles from './Post.module.css'
 
 import { Tag } from '../Tag/Tag'
+import { ArrowUpRight } from 'lucide-react'
 
 export interface PostProps {
     id?: number
@@ -10,9 +11,10 @@ export interface PostProps {
     tag: string
     timeToRead: string
     postImg: string
+    link: string
 }
 
-export function Post( {publishedAt, title, content, tag, timeToRead, postImg}: PostProps ) {
+export function Post( {publishedAt, title, content, tag, timeToRead, postImg, link}: PostProps ) {
     return(
         <div className="container">
             <div className={styles.wrapper}>
@@ -21,8 +23,11 @@ export function Post( {publishedAt, title, content, tag, timeToRead, postImg}: P
                     <strong>{title}</strong>
                     <p>{content}</p>
                     <footer className={styles.footer}>
-                        <Tag text={tag} />
-                        <time>{timeToRead}</time>
+                        <div className={styles.infoBox}>
+                            <Tag text={tag} />
+                            <time>{timeToRead}</time>
+                        </div>
+                        <a href={link} target="_blank" className={styles.lerMais}>Ler mais<ArrowUpRight/></a>
                     </footer>
                 </div>
                 <img src={postImg} />

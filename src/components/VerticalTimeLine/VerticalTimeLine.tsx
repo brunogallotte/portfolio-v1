@@ -1,6 +1,8 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
+import { Briefcase, Code2, Microscope, RocketIcon } from 'lucide-react';
+
 export function VerticalTimeLine() {
     return(
         <div className="container">
@@ -11,6 +13,7 @@ export function VerticalTimeLine() {
                 contentArrowStyle={{ borderRight: '7px solid var(--violet-600)' }}
                 date="2023 - present"
                 iconStyle={{ background: 'var(--violet-950)', color: '#fff' }}
+                icon={<RocketIcon />}
             >
                 <h3 className="vertical-timeline-element-title">Especialista React Js</h3>
                 <h4 className="vertical-timeline-element-subtitle">RocketSeat Ignite</h4>
@@ -24,6 +27,7 @@ export function VerticalTimeLine() {
                 iconStyle={{ background: 'var(--violet-950)', color: '#fff' }}
                 contentStyle={{ background: 'var(--zinc-900)', color: 'var(--zinc-200)' }}
                 contentArrowStyle={{ borderRight: '7px solid var(--violet-600)' }}
+                icon={<Briefcase />}
             >
                 <h3 className="vertical-timeline-element-title">Freelancer</h3>
                 <h4 className="vertical-timeline-element-subtitle">Desenvolvedor Front-end</h4>
@@ -37,6 +41,7 @@ export function VerticalTimeLine() {
                 iconStyle={{ background: 'var(--violet-950)', color: '#fff' }}
                 contentStyle={{ background: 'var(--zinc-900)', color: 'var(--zinc-200)' }}
                 contentArrowStyle={{ borderRight: '7px solid var(--violet-600)' }}
+                icon={<Code2 />}
             >
                 <h3 className="vertical-timeline-element-title">Desenvolvedor Full Stack Python</h3>
                 <h4 className="vertical-timeline-element-subtitle">Escola Britânica de Artes Criativas e Tecnologia</h4>
@@ -51,6 +56,7 @@ export function VerticalTimeLine() {
                 iconStyle={{ background: 'var(--violet-950)', color: '#fff' }}
                 contentStyle={{ background: 'var(--zinc-900)', color: 'var(--zinc-200)' }}
                 contentArrowStyle={{ borderRight: '7px solid var(--violet-600)' }}
+                icon={<Microscope />}
             >
                 <h3 className="vertical-timeline-element-title">Bacharel em Ciências Biológicas</h3>
                 <h4 className="vertical-timeline-element-subtitle">Unifeso</h4>

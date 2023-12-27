@@ -7,6 +7,8 @@ import { Projects } from './Pages/Projects.tsx'
 import { About } from './Pages/About.tsx'
 import { Blog } from './Pages/Blog.tsx'
 
+import { AnimatePresence } from 'framer-motion'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,9 +28,14 @@ const router = createBrowserRouter([
   }
 ])
 
+
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
+
   <React.StrictMode>
-    <App />
-    <RouterProvider router={router} />
+    <AnimatePresence mode="wait">
+      <App />
+      <RouterProvider router={router} />
+    </AnimatePresence>
   </React.StrictMode>,
 )
