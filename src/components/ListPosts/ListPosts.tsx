@@ -25,6 +25,7 @@ export function ListPosts() {
                 tag={post.tag}
                 timeToRead={post.timeToRead}
                 postImg={post.postImg}
+                link={post.link}
             />
             })}
         </>
