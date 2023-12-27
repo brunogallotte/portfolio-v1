@@ -89,3 +89,9 @@
     transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
 }
 }
+
+@media (max-width: 768px) {
+    .cubeContainer {
+        display: none;
+    }
+}

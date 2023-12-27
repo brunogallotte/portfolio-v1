@@ -19,13 +19,6 @@
     background: var(--zinc-700);
 }
 
-.separator {
-    width: 100px;
-    height: 1px;
-    border: 1px dotted var(--white);
-    opacity: 0.7;
-}
-
 .content {
     display: flex;
     align-items: center;
@@ -39,4 +32,12 @@
 
 .content svg {
     color: var(--violet-400);
+}
+
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

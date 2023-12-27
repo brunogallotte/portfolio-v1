@@ -9,3 +9,10 @@
     background: var(--white);
     border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
