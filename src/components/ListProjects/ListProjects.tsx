@@ -17,7 +17,8 @@ export function ListProjects() {
                         title={project.title} 
                         description={project.description} 
                         linkVercel={project.linkVercel} 
-                        linkGitHub={project.linkGitHub} 
+                        linkGitHub={project.linkGitHub}
+                        linkLinkedin={project.linkLinkedin} 
                     />
                     })}
                 </div>

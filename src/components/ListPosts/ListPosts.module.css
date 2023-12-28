@@ -13,4 +13,8 @@
     .listPost {
         padding-bottom: 2rem;
     }
+
+    strong {
+        justify-content: center;
+    }
 }

@@ -15,15 +15,23 @@ export function Hero() {
                         animate={{ y: 0 }}
                         transition={{ duration: 0.7, ease: "easeOut", type: "tween" }}
                     >
-                        <h1>Hi, I'm Bruno Gallotte<span>.</span></h1>
-                        <strong>I'm a <span>Front End Developer</span></strong>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam illum ratione suscipit ipsa, deleniti accusamus voluptatem similique at numquam ducimus obcaecati rem maxime repellat eligendi dolorem. Blanditiis non possimus incidunt.</p>
+                        <h1>Olá, eu me chamo <br/> Bruno Gallotte<span>.</span></h1>
+                        <strong>E sou <span>Desenvolvedor Front-End</span></strong>
+                        <p>No início estudei para ser full stack, mas me apaixonei por desenvolver telas bonitas nos mínimos detalhes. Minha experiência abrange a criação de aplicações web front-end, integração com backend através de APIs RESTful, utilizando principalmente a biblioteca React.js com Typescript, Styled-Components ou Tailwind CSS, gerenciamento de estados com Redux.js ou Context API. Vamos trabalhar juntos?</p>
                         <div className={styles.socialBox}>
-                            <Linkedin />
-                            <Github />
-                            <Mail />
+                            <a href="http://www.linkedin.com/in/brunogallotte" target="_blank">
+                                <Linkedin />
+                            </a>
+                            <a href="https://github.com/brunogallotte" target="_blank">
+                                <Github />
+                            </a>
+                            <a href="mailto:brunogallotte.sci@gmail.com" target="_blank">
+                                <Mail />
+                            </a>
                         </div>
-                        <button>Contact-me <Mail size={16}/></button>
+                        <a href="http://wa.me/21981353620" target="_blank">
+                            <button>Contact-me <Mail size={16}/></button>
+                        </a>
                         <div className={styles.blur}/>
                     </motion.div>
                     <div className={styles.cube}>

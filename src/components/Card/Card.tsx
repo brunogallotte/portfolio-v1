@@ -9,9 +9,10 @@ export interface CardProps {
     description: string
     linkVercel: string
     linkGitHub?: string
+    linkLinkedin: string
 }
 
-export function Card({ imgUrl, datePublished, title, description, linkVercel, linkGitHub }: CardProps) {
+export function Card({ imgUrl, datePublished, title, description, linkVercel, linkGitHub, linkLinkedin }: CardProps) {
     return(
         <div className={styles.wrapper}>
            <img src={imgUrl} />
@@ -29,7 +30,9 @@ export function Card({ imgUrl, datePublished, title, description, linkVercel, li
                 </div>
 
                 <footer className={styles.footer}>
-                    <button>Saber mais<ArrowUpRight size={16}/></button>
+                    <a href={linkLinkedin} target="_blank">
+                        <button>Saber mais<ArrowUpRight size={16}/></button>
+                    </a>
                     <div className={styles.links}>
                         <a href={linkVercel} target="_blank">
                             <Link />

@@ -71,6 +71,10 @@
     mix-blend-mode: color-dodge;
 }
 
+.content a {
+    text-decoration: none;
+}
+
 .socialBox {
     display: flex;
     gap: 0.5rem;
