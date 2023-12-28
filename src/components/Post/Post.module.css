@@ -60,3 +60,40 @@
     gap: 1rem;
 }
 
+.mobileImage {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content {
+        align-items: center;
+    }
+
+    .desktopImage {
+        display: none;
+    }
+
+    .mobileImage {
+        display: flex;
+        width: 100%;
+    }
+
+    .timeToRead {
+        display: none;
+    }
+
+    .infoBox {
+        justify-content: space-between;
+    }
+
+    .footer {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+

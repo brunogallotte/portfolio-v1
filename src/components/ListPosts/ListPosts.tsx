@@ -15,19 +15,21 @@ export function ListPosts() {
             <div className="container">
                 <strong className={styles.title}><ArrowDownRightSquare size={32} />Blog</strong>
             </div>
-            {posts.map((post) => {
-                const limitedContent = getContentLimitedCaracters(post.content)
+            <div className={styles.listPost}>
+                {posts.map((post) => {
+                    const limitedContent = getContentLimitedCaracters(post.content)
 
-                return <Post key={post.id} 
-                publishedAt={post.publishedAt}
-                title={post.title}
-                content={limitedContent}
-                tag={post.tag}
-                timeToRead={post.timeToRead}
-                postImg={post.postImg}
-                link={post.link}
-            />
-            })}
+                    return <Post key={post.id} 
+                    publishedAt={post.publishedAt}
+                    title={post.title}
+                    content={limitedContent}
+                    tag={post.tag}
+                    timeToRead={post.timeToRead}
+                    postImg={post.postImg}
+                    link={post.link}
+                />
+                })}
+            </div>
         </>
     )
 }
