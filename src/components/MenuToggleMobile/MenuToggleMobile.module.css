@@ -1,0 +1,59 @@
+.menuIcon {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    width: 60px;
+    height: 50px;
+    background: var(--zinc-900);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.menuIcon input {
+    display: none;
+}
+
+.menuIcon span {
+    display: block;
+    position: relative;
+    height: 3px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    opacity: 1;
+    left: 0;
+    margin-bottom: 24%;
+    transition: 0.3s ease-in-out;
+}
+  
+.menuIcon span {
+    transform-origin: left center;
+}
+
+.menuIcon input:checked ~ span {
+    background: var(--violet-600);
+    left: 5px;
+    margin-bottom: 28%;
+}
+
+.menuIcon input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+}
+
+.menuIcon input:checked ~ span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.menuIcon input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .menuIcon {
+        display: block;
+    }
+}

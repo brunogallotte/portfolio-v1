@@ -5,6 +5,7 @@
     margin-top: 4rem;
     gap: 1rem;
     z-index: 1;
+    margin-bottom: 1rem;
 }
 
 .wrapper .title {
@@ -13,7 +14,6 @@
     color: var(--violet-600);
     gap: 0.5rem;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
 }
 
 .content {
@@ -26,5 +26,14 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+
+    .title {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper {
+        padding-bottom: 4rem;
     }
 }

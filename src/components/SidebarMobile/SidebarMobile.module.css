@@ -1,0 +1,25 @@
+.wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: var(--zinc-900);
+    z-index: 2;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--violet-600);
+    font-weight: bold;
+}
