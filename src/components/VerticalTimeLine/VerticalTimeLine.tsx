@@ -52,7 +52,7 @@ export function VerticalTimeLine() {
             
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                date="2006 - 2008"
+                date="2017 - 2020"
                 iconStyle={{ background: 'var(--violet-950)', color: '#fff' }}
                 contentStyle={{ background: 'var(--zinc-900)', color: 'var(--zinc-200)' }}
                 contentArrowStyle={{ borderRight: '7px solid var(--violet-600)' }}
