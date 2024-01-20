@@ -8,7 +8,7 @@ export function ListProjects() {
     return(
         <div className="container">
             <div className={styles.wrapper}>
-                <strong className={styles.title}><ArrowDownRightSquare size={32} />Projects</strong>
+                <strong className={styles.title}><ArrowDownRightSquare size={32} />Projetos</strong>
                 <div className={styles.content}>
                     {projects.map(project => {
                     return <Card 

@@ -11,6 +11,20 @@ export function VerticalTimeLine() {
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: 'var(--zinc-900)', color: 'var(--zinc-200)' }}
                 contentArrowStyle={{ borderRight: '7px solid var(--violet-600)' }}
+                date="2024 - present"
+                iconStyle={{ background: 'var(--violet-950)', color: '#fff' }}
+                icon={<RocketIcon />}
+            >
+                <h3 className="vertical-timeline-element-title">Análise e Desenvolvimento de Sistemas</h3>
+                <h4 className="vertical-timeline-element-subtitle">Curso Superior de Tecnologia</h4>
+                <p>
+                    Graduação em Curso Superior de Tecnologia (CST), análise e desenvolvimento de sistemas, iniciada em janeiro de 2024 na Estácio. Estudo de matérias como segurança da informação, computação em núvem, engenharia de software, métodos ágeis com scrum e etc
+                </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: 'var(--zinc-900)', color: 'var(--zinc-200)' }}
+                contentArrowStyle={{ borderRight: '7px solid var(--violet-600)' }}
                 date="2023 - present"
                 iconStyle={{ background: 'var(--violet-950)', color: '#fff' }}
                 icon={<RocketIcon />}

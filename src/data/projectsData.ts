@@ -3,6 +3,7 @@ import { CardProps } from "../components/Card/Card";
 import todoImg from '../assets/todo.png'
 import twitterImg from '../assets/twitterproject.png'
 import efoodImg from '../assets/efood.png'
+import coffeDelivery from '../assets/coffeDelivery.png'
 
 export const projects: CardProps[] = [
     {
@@ -31,5 +32,14 @@ export const projects: CardProps[] = [
         linkVercel: "https://e-food-two.vercel.app/",
         linkGitHub: "https://github.com/brunogallotte/e-food?tab=readme-ov-file",
         linkLinkedin: "https://linkedin.com/posts/brunogallotte_frontend-react-webdevelopment-activity-7127749823448948736-veYa?utm_source=share&utm_medium=member_desktop"
+    },
+    {
+        imgUrl: coffeDelivery,
+        datePublished: "16/01/2024",
+        title: "Coffe Delivery",
+        description: "A aplicação e-commerce especializada em cafés, desenvolvida utilizando React.js e Styled-components, formulário controlado com React-Hook-Form e validado com Zod. ",
+        linkVercel: "https://coffe-delivery-challenge.vercel.app/",
+        linkGitHub: "https://github.com/brunogallotte/coffe-delivery",
+        linkLinkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7152663677622497281/"
     }
 ]
