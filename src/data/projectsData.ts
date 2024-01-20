@@ -7,22 +7,13 @@ import coffeDelivery from '../assets/coffeDelivery.png'
 
 export const projects: CardProps[] = [
     {
-        imgUrl: todoImg,
-        datePublished: "18/12/2023",
-        title: "To-do-challenge",
-        description: "Este é o primeiro desafio proposto pelo bootcamp de especialização em React.js do Ignite atualizado: uma to-do-list. É relativamente simples, mas o suficiente para praticar os principais fundamentos da biblioteca. O desafio cobre somente o layout desktop!",
-        linkVercel: "https://to-do-list-challenge-ignite.vercel.app/",
-        linkGitHub: "https://github.com/brunogallotte/to-do-list-challenge",
-        linkLinkedin: "https://linkedin.com/posts/brunogallotte_react-rocketseat-typescript-activity-7145525651846995968-e7Bl?utm_source=share&utm_medium=member_desktop"
-    },
-    {
-        imgUrl: twitterImg,
-        datePublished: "18/12/2023",
-        title: "Twitter App",
-        description: "O desafio consistia em desenvolver uma API RESTful e integrar com uma interface front-end. Para construção da API optei pelo Django Rest Framework, e no front-end segui com React.js aliado ao Typescript.",
-        linkVercel: "https://twitter-ivory-one.vercel.app/",
-        linkGitHub: "https://github.com/brunogallotte/twitter",
-        linkLinkedin: "https://linkedin.com/posts/brunogallotte_api-django-djangorestframework-activity-7142953790223138816-gPl4?utm_source=share&utm_medium=member_desktop"
+        imgUrl: coffeDelivery,
+        datePublished: "16/01/2024",
+        title: "Coffe Delivery",
+        description: "A aplicação e-commerce especializada em cafés, desenvolvida utilizando React.js e Styled-components, formulário controlado com React-Hook-Form e validado com Zod. ",
+        linkVercel: "https://coffe-delivery-challenge.vercel.app/",
+        linkGitHub: "https://github.com/brunogallotte/coffe-delivery",
+        linkLinkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7152663677622497281/"
     },
     {
         imgUrl: efoodImg,
@@ -34,12 +25,21 @@ export const projects: CardProps[] = [
         linkLinkedin: "https://linkedin.com/posts/brunogallotte_frontend-react-webdevelopment-activity-7127749823448948736-veYa?utm_source=share&utm_medium=member_desktop"
     },
     {
-        imgUrl: coffeDelivery,
-        datePublished: "16/01/2024",
-        title: "Coffe Delivery",
-        description: "A aplicação e-commerce especializada em cafés, desenvolvida utilizando React.js e Styled-components, formulário controlado com React-Hook-Form e validado com Zod. ",
-        linkVercel: "https://coffe-delivery-challenge.vercel.app/",
-        linkGitHub: "https://github.com/brunogallotte/coffe-delivery",
-        linkLinkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7152663677622497281/"
-    }
+        imgUrl: twitterImg,
+        datePublished: "18/12/2023",
+        title: "Twitter App",
+        description: "O desafio consistia em desenvolver uma API RESTful e integrar com uma interface front-end. Para construção da API optei pelo Django Rest Framework, e no front-end segui com React.js aliado ao Typescript.",
+        linkVercel: "https://twitter-ivory-one.vercel.app/",
+        linkGitHub: "https://github.com/brunogallotte/twitter",
+        linkLinkedin: "https://linkedin.com/posts/brunogallotte_api-django-djangorestframework-activity-7142953790223138816-gPl4?utm_source=share&utm_medium=member_desktop"
+    },
+    {
+        imgUrl: todoImg,
+        datePublished: "18/12/2023",
+        title: "To-do-challenge",
+        description: "Este é o primeiro desafio proposto pelo bootcamp de especialização em React.js do Ignite atualizado: uma to-do-list. É relativamente simples, mas o suficiente para praticar os principais fundamentos da biblioteca. O desafio cobre somente o layout desktop!",
+        linkVercel: "https://to-do-list-challenge-ignite.vercel.app/",
+        linkGitHub: "https://github.com/brunogallotte/to-do-list-challenge",
+        linkLinkedin: "https://linkedin.com/posts/brunogallotte_react-rocketseat-typescript-activity-7145525651846995968-e7Bl?utm_source=share&utm_medium=member_desktop"
+    },
 ]
